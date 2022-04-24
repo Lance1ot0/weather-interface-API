@@ -4,93 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Weather Interface</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="container">
 
-        <h1>Weather</h1>
-
-        <div class="bloc-logo-info">
-
-            <div class="bloc-logo">
-                <img src="./res/04d.svg" alt="logo du temps qu'il fait" class="logo-meteo">
-            </div>
-
-            <div class="bloc-info">
-                <p class="weather"></p>
-                <p class="temperature"></p>
-                <p class="localisation"></p>
-            </div>
-
+        <div id="weather-img">
+            <img id="weather-logo" src="#" alt="weather logo">
         </div>
 
-
-        <div class="hour-prevision-block">
-            <div class="bloc-h">
-                <p class="hour-prevision"></p>
-                <p class="hour-prevision-value"></p>
-            </div>
-            <div class="bloc-h">
-                <p class="hour-prevision"></p>
-                <p class="hour-prevision-value"></p>
-            </div>
-            <div class="bloc-h">
-                <p class="hour-prevision"></p>
-                <p class="hour-prevision-value"></p>
-            </div>
-            <div class="bloc-h">
-                <p class="hour-prevision"></p>
-                <p class="hour-prevision-value"></p>
-            </div>
-            <div class="bloc-h">
-                <p class="hour-prevision"></p>
-                <p class="hour-prevision-value"></p>
-            </div>
-            <div class="bloc-h">
-                <p class="hour-prevision"></p>
-                <p class="hour-prevision-value"></p>
-            </div>
-            <div class="bloc-h">
-                <p class="hour-prevision"></p>
-                <p class="hour-prevision-value"></p>
-            </div>
+        <div id="temperature">
+            <span>temperature</span>
         </div>
 
+        <div id="localisation-weather-status">
 
-        <div class="day-prevision-bloc">
-            <div class="bloc-j">
-                <p class="day-prevision"></p>
-                <p class="day-prevision-temp"></p>
+            <div id="localisation-date">
+                <span id="localisation">localisation</span>
+                <span id="date"> date</span>
             </div>
-            <div class="bloc-j">
-                <p class="day-prevision"></p>
-                <p class="day-prevision-temp"></p>
-            </div>
-            <div class="bloc-j">
-                <p class="day-prevision"></p>
-                <p class="day-prevision-temp"></p>
-            </div>
-            <div class="bloc-j">
-                <p class="day-prevision"></p>
-                <p class="day-prevision-temp"></p>
-            </div>
-            <div class="bloc-j">
-                <p class="day-prevision"></p>
-                <p class="day-prevision-temp"></p>
-            </div>
-            <div class="bloc-j">
-                <p class="day-prevision"></p>
-                <p class="day-prevision-temp"></p>
-            </div>
-            <div class="bloc-j">
-                <p class="day-prevision"></p>
-                <p class="day-prevision-temp"></p>
-            </div>
+
+            <div id="weather-status">weather status</div>
+        </div>
+
+        <div id="hours-container">
+ 
         </div>
 
     </div>
+
+    <script src="app.js"></script>
     
-    <script src="scripts/app.js"></script>
 </body>
 </html>
